@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وثيقة الإفصاح والتشغيل - MORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* BRAND IDENTITY COLORS */
+        :root {
+            --royal-blue: #1c3154; /* official hex from guidelines */
+            --mora-orange: #ef562f; /* official hex from guidelines */
+            --slate-gray: #767d84;
+            --bg-light: #F8FAFC;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #CBD5E1;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+            gap: 50px;
+        }
+
+        /* SLIDE SPECIFICATIONS (16:9 Aspect Ratio) */
+        .slide {
+            width: 1280px;
+            height: 720px;
+            background-color: var(--white);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        /* DECORATIVE ELEMENTS */
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background-color: var(--mora-orange);
+        }
+
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #F1F5F9;
+            padding-bottom: 20px;
+        }
+
+        .logo-box img {
+            height: 55px;
+        }
+
+        .slide-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--royal-blue);
+        }
+
+        .content-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        /* TYPOGRAPHY */
+        h1 { font-size: 64px; color: var(--royal-blue); line-height: 1.2; }
+        h3 { font-size: 28px; color: var(--mora-orange); margin-bottom: 15px; font-weight: 600; }
+        p, li { font-size: 20px; color: var(--slate-gray); line-height: 1.6; }
+        
+        /* LAYOUT HELPERS */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+
+        .card {
+            background: #F8FAFC;
+            padding: 30px;
+            border-radius: 12px;
+            border-right: 5px solid var(--royal-blue);
+        }
+
+        .stat-card {
+            background: var(--royal-blue);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .stat-card .value { font-size: 48px; font-weight: 700; color: var(--mora-orange); }
+
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table-custom th { background: var(--royal-blue); color: white; padding: 15px; text-align: right; }
+        .table-custom td { padding: 15px; border-bottom: 1px solid #E2E8F0; }
+
+        /* SPECIFIC COMPONENTS */
+        .totem-img {
+            max-height: 450px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--mora-orange);
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* ANIMATION FEEL */
+        .slide { transition: transform 0.3s ease; }
+        .slide:hover { transform: scale(1.01); }
+
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER -->
+<div class="slide" style="justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #1c3154 0%, #0a192f 100%); color: white;">
+    <div style="background: white; padding: 40px; border-radius: 20px; margin-bottom: 40px;">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" style="height: 120px;" alt="MORA LOGO">
+    </div>
+    <h1 style="color: white; font-size: 72px;">وثيقة الإفصاح والتشغيل</h1>
+    <p style="color: var(--mora-orange); font-size: 32px; font-weight: 500; margin-top: 20px;">نحو ريادة قطاع مراكز الخدمة والطاقة</p>
+    <div style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.2); pt-20px; width: 400px;">
+        <p style="color: #94a3b8; font-size: 18px;">الالتزام بنظام الامتياز التجاري (المرسوم الملكي م/22)</p>
+    </div>
+</div>
+
+<!-- SLIDE 2: INSTITUTIONAL ANALYSIS -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">التحليل المؤسسي والكيان القانوني</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body grid-2">
+        <div class="card">
+            <h3>بيانات التأسيس</h3>
+            <ul style="list-style: none; padding-right: 0;">
+                <li style="margin-bottom: 12px;"><i class="fa-solid fa-building-circle-check" style="color: var(--mora-orange); margin-left: 10px;"></i> <strong>الاسم القانوني:</strong> شركة مور للوقود (ذ.م.م)</li>
+                <li style="margin-bottom: 12px;"><i class="fa-solid fa-calendar-day" style="color: var(--mora-orange); margin-left: 10px;"></i> <strong>تاريخ التأسيس:</strong> 11/07/1443هـ</li>
+                <li style="margin-bottom: 12px;"><i class="fa-solid fa-location-dot" style="color: var(--mora-orange); margin-left: 10px;"></i> <strong>المقر:</strong> محافظة الرس، منطقة القصيم</li>
+                <li style="margin-bottom: 12px;"><i class="fa-solid fa-briefcase" style="color: var(--mora-orange); margin-left: 10px;"></i> <strong>السجل التجاري:</strong> 1132112931</li>
+            </ul>
+        </div>
+        <div class="card" style="border-right-color: var(--mora-orange);">
+            <h3>هيكل الحوكمة والملاءة</h3>
+            <p>تدار الشركة من قبل <strong>تحالف مؤسسي متخصص</strong> في قطاعات الطاقة والمقاولات، مما يضمن استقرار الهيكل التمويلي.</p>
+            <div style="margin-top: 20px; padding: 15px; background: #FFF; border-radius: 8px;">
+                <p style="font-size: 18px; font-style: italic;">"تم ضخ تمويلات نقدية داخلية بقيمة 2.49 مليون ريال لدعم التوسع الرأسمالي، وهي تمويلات بدون أعباء فوائد تمنح الشركة مرونة عالية."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 3: LEADERSHIP & EXPERTISE -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">الملاءة المهنية والخبرات القيادية</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body">
+        <p style="margin-bottom: 20px;">تمتلك "مور" فريقاً إدارياً بخبرات ميدانية تتجاوز المتطلبات النظامية (خبرة تشغيل 6 محطات حالية):</p>
+        <table class="table-custom">
+            <thead>
+                <tr>
+                    <th>المسمى الوظيفي</th>
+                    <th>سنوات الخبرة</th>
+                    <th>أبرز المجالات التخصصية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>المدير العام</td>
+                    <td>+15 سنة</td>
+                    <td>تأسيس وإدارة مشاريع المقاولات والاتصالات وخدمات الطاقة</td>
+                </tr>
+                <tr>
+                    <td>المدير المالي</td>
+                    <td>+20 سنة</td>
+                    <td>خبير مالي معتمد (CMA, CFA) متخصص في معايير IFRS</td>
+                </tr>
+                <tr>
+                    <td>مدير التشغيل</td>
+                    <td>منذ 2013</td>
+                    <td>الإشراف التشغيلي الميداني على أكثر من 8 محطات وقود كبرى</td>
+                </tr>
+                <tr>
+                    <td>مسؤول السلامة والجودة</td>
+                    <td>دولية</td>
+                    <td>خبير في معايير NFPA واشتراطات الدفاع المدني السعودي</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- SLIDE 4: STRATEGIC DIFFERENTIATION -->
+<div class="slide" style="background-color: #F1F5F9;">
+    <div class="slide-header">
+        <div class="slide-title">التميز الاستراتيجي (مور vs المنافسين)</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body grid-2">
+        <div style="background: white; padding: 30px; border-radius: 12px; border-top: 4px solid var(--royal-blue);">
+            <div class="tag">نموذج مور (MORA)</div>
+            <p>• <strong>الاستثمار المبدئي:</strong> واقعي يعكس أسعار السوق (0.86 - 1.8 مليون ريال).</p>
+            <p>• <strong>سلاسل الإمداد:</strong> توريد مركزي مباشر من أرامكو السعودية.</p>
+            <p>• <strong>الأتمتة:</strong> نظام ذكي يربط الخزانات بمركز التوزيع آلياً.</p>
+        </div>
+        <div style="background: white; padding: 30px; border-radius: 12px; opacity: 0.8;">
+            <div class="tag" style="background: #94a3b8;">النماذج التقليدية</div>
+            <p>• <strong>رسوم الامتياز:</strong> قد تظهر منخفضة شكلياً لكنها تفتقر لدعم البنية التحتية.</p>
+            <p>• <strong>التوريد:</strong> الاعتماد على وسطاء متعددين مما يقلل هامش الربح.</p>
+            <p>• <strong>الرقابة:</strong> عمليات جرد يدوية عرضة للأخطاء والفاقد.</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 5: FINANCIAL PERFORMANCE 2024 -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">مؤشرات الأداء والمركز المالي (2024)</div>
+        <div class="logo-body"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" style="height: 40px;"></div>
+    </div>
+    <div class="content-body grid-3">
+        <div class="stat-card">
+            <p style="color: #cbd5e1;">صافي الربح الموحد</p>
+            <div class="value">517,123</div>
+            <p>ريال سعودي</p>
+        </div>
+        <div class="stat-card" style="background: var(--white); border: 2px solid var(--royal-blue); color: var(--royal-blue);">
+            <p>إجمالي الأصول</p>
+            <div class="value" style="color: var(--royal-blue);">3.22M</div>
+            <p>ريال سعودي</p>
+        </div>
+        <div class="stat-card">
+            <p style="color: #cbd5e1;">الإيرادات السنوية</p>
+            <div class="value">8.94M</div>
+            <p>نمو +60%</p>
+        </div>
+    </div>
+    <div style="margin-top: 30px; padding: 20px; background: #FFF3DD; border-radius: 8px;">
+        <p style="font-size: 18px;"><strong>ملاحظة الشفافية:</strong> الشركة تمتلك مخزوناً بقيمة 2.6 مليون ريال، وقد تم اعتماد النتائج المالية الموحدة بناءً على مراجعة المحاسب المستقل "أحمد الفراج" لضمان المصداقية المطلقة.</p>
+    </div>
+</div>
+
+<!-- SLIDE 6: BRAND IDENTITY & PHILOSOPHY -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">الهوية البصرية وفلسفة "مورا"</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body grid-2">
+        <div>
+            <h3>دلالات الشعار</h3>
+            <p>• <strong>الاسم:</strong> مشتق من "More" لتعكس الوفرة وزيادة الخدمات.</p>
+            <p>• <strong>الأزرق الملكي:</strong> يرمز للقوة والموثوقية المؤسسية.</p>
+            <p>• <strong>البرتقالي:</strong> يرمز للطاقة الحيوية والابتكار المستمر.</p>
+            <p>• <strong>الأيقونة:</strong> تصميم تجريدي لحرف (M) مع ميلان للأمام لبيان "السرعة والشمولية".</p>
+            <div style="margin-top: 30px;">
+                <h3>صندوق التسويق (1%)</h3>
+                <p>تلتزم كافة الفروع بالمساهمة بـ 1% من صافي الأرباح لدعم الحملات الوطنية لتعزيز قيمة العلامة التجارية MORA.</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="http://googleusercontent.com/image_collection/image_retrieval/5548095173718840140" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 15px rgba(0,0,0,0.1);" alt="Mora Branding">
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 7: INVESTMENT MODEL (CAPEX) -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">نموذج الاستثمار المبدئي (محطة فئة ب)</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body">
+        <p>تقدير التكاليف الرأسمالية (Capex) لبدء التشغيل الفعلي لعام 2025:</p>
+        <table class="table-custom">
+            <thead>
+                <tr>
+                    <th>البند</th>
+                    <th>التكلفة التقديرية (SAR)</th>
+                    <th>المواصفات الفنية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>رسوم الامتياز الأولية</td>
+                    <td>80,000 - 150,000</td>
+                    <td>ترخيص العلامة لمرة واحدة</td>
+                </tr>
+                <tr>
+                    <td>المضخات (4 مضخات)</td>
+                    <td>160,000 - 210,000</td>
+                    <td>نظام فوترة إلكتروني حديث</td>
+                </tr>
+                <tr>
+                    <td>المباني والمظلات</td>
+                    <td>500,000 - 1,200,000</td>
+                    <td>حسب دليل الهوية البصرية الموحد</td>
+                </tr>
+                <tr>
+                    <td>أنظمة السلامة والتقنية</td>
+                    <td>45,000 - 90,000</td>
+                    <td>الدفاع المدني، POS، كاميرات ذكية</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 20px; text-align: left; font-weight: bold; color: var(--mora-orange); font-size: 24px;">
+            إجمالي الاستثمار: 865,000 - 1,850,000 ريال
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 8: AUTOMATION & SUPPLY CHAIN -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">أتمتة التشغيل وضمان استمرارية التوريد</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body grid-2">
+        <div class="card">
+            <h3>نظام الأتمتة الذكي</h3>
+            <p>ربط رقمي كامل للخزانات بمركز التوزيع:</p>
+            <ul style="margin-right: 25px; margin-top: 10px;">
+                <li>تنبيه آلي عند وصول المخزون لنسبة 25%.</li>
+                <li>حجز شحنة تلقائياً لتقليل مخاطر نفاد الوقود.</li>
+                <li>مراقبة الهدر اللحظي (Inventory Reconciliation).</li>
+            </ul>
+        </div>
+        <div class="card" style="border-right-color: var(--mora-orange);">
+            <h3>سلاسل الإمداد (Aramco)</h3>
+            <p>• توريد مركزي مباشر من أرامكو السعودية.</p>
+            <p>• أسطول نقل تابع للمانح لضمان ثبات الأسعار.</p>
+            <p>• اتفاقيات (SAB) لضمان أمن البيانات المالية PCI DSS.</p>
+        </div>
+    </div>
+    <div style="margin-top: 30px; text-align: center;">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/16453072773270666282" style="height: 250px; border-radius: 12px;" alt="Supply Chain Diagram">
+    </div>
+</div>
+
+<!-- SLIDE 9: QUALITY & EXIT STRATEGY -->
+<div class="slide">
+    <div class="slide-header">
+        <div class="slide-title">الالتزام، الجودة، وحماية الممنوح</div>
+        <div class="logo-box"><img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" alt="Logo"></div>
+    </div>
+    <div class="content-body grid-2">
+        <div>
+            <h3>معايير الجودة</h3>
+            <p>• مطابقة المواصفة العالمية <strong>ISO 9001:2015</strong>.</p>
+            <p>• استخدام نظام <strong>FIXIT</strong> التقني لإدارة الصيانة والنظافة.</p>
+            <p>• تصنيف المواقع الخطرة وفق معايير NFPA 30.</p>
+        </div>
+        <div style="background: #F1F5F9; padding: 25px; border-radius: 12px;">
+            <h3>ترتيبات ما بعد الإنهاء</h3>
+            <p>تضمن "مور" حماية استثمارك عبر:</p>
+            <p>• <strong>إعادة شراء المخزون:</strong> يلتزم المانح بإعادة شراء الوقود بسعر التكلفة عند فك الارتباط لسبب غير راجع لخطأ الممنوح.</p>
+            <p>• <strong>الحصرية الجغرافية:</strong> نطاق حماية بمسافة 3 كم لمنع المنافسة الداخلية.</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 10: CLOSING -->
+<div class="slide" style="background-color: var(--royal-blue); color: white; text-align: center; justify-content: center;">
+    <div style="width: 250px; margin: 0 auto 40px; background: white; padding: 20px; border-radius: 15px;">
+        <img src="http://googleusercontent.com/image_collection/image_retrieval/17855074258957805218" style="width: 100%;" alt="MORA">
+    </div>
+    <h1 style="color: white;">شكراً لكم</h1>
+    <p style="color: var(--mora-orange); font-size: 28px; margin-top: 20px;">شركاؤكم في بناء مستقبل الطاقة المتكاملة</p>
+    <div style="margin-top: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <div>
+            <p style="color: #cbd5e1; font-size: 16px;">الرقم الموحد</p>
+            <p style="color: white; font-size: 24px; font-weight: bold;">920013104</p>
+        </div>
+        <div>
+            <p style="color: #cbd5e1; font-size: 16px;">الموقع الإلكتروني</p>
+            <p style="color: white; font-size: 24px; font-weight: bold;">www.moorefuel.sa</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
